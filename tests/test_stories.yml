@@ -1,0 +1,187 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: flirt_1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      aww
+    intent: flirt 1
+  - action: utter_flirt_1
+
+- story: flirt_2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      i really want you
+    intent: flirt 2
+  - action: utter_flirt_2
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: flirt 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: deny
+  - action: utter_did_that_help
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_happy
+
+- story: flirt 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: deny
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sarcasam 1
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      i am sad
+    intent: sarcasam 1
+  - action: utter_sarcasam_1
+
+- story: sarcasam 2
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      i need advice
+    intent: sarcasam 2
+  - action: utter_sarcasam_2
+
+- story: sarcasam 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      knock knock
+    intent: sarcasam 3
+  - action: utter_sarcasam_3
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: emotional 1
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      i cried today
+    intent: emotional 1
+  - action: utter_emotional_1
+
+- story: emotional 2
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      i am so happy today
+    intent: emotional 2
+  - action: utter_emotional_2
+
+- story: goofy 1
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      you are funny
+    intent: goofy 1
+  - action: utter_goofy_1
+
+- story: goofy 2
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      it's so hot today
+    intent: goofy 2
+  - action: utter_goofy_2
+
+- story: goofy 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      sing me to sleep
+    intent: goofy 3
+  - action: utter_goofy_3
+
+- story: goofy 4
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      how do I look
+    intent: goofy 4
+  - action: utter_goofy_4
+
+- story: affirm
+  steps:
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_affirm
+  
+  - story: deny
+    steps:
+  - user: |
+      no
+    intent: deny
+  - action: utter_deny
+  

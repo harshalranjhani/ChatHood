@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/select.css') }}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='/images/favicon.png')}}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Select | ChatHood </title>
+</head>
+<body>
+    <h1 style="color: white; 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;">Select your favourite!</h1>
+    <div class="container">
+        <div class="card" style="width: 18rem; background: linear-gradient(120deg,#000000, #1a1a1a);">
+            <img class="card-img-top" src="{{url_for('static', filename='/images/friendsImage.jpeg')}}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="color: white; text-align: center; "><b>F.R.I.E.N.D.S.</b></p>
+              <a class="btn btn-dark" style="display: block;
+              margin-left: auto;
+              margin-right: auto;" href="/chat/friends">Start texting</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background: linear-gradient(120deg,#000000, #1a1a1a);">
+            <img class="card-img-top" src="{{url_for('static', filename='/images/marvel.jpeg')}}" alt="Card image cap" style="height: 95%;">
+            <div class="card-body">
+              <p class="card-text" style="color: white; text-align: center;"><b>MARVEL</b></p>
+              <a class="btn btn-dark" style="display: block;
+              margin-left: auto;
+              margin-right: auto;" href="/chat/marvel">Start texting</a>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: flirt 1
+  examples:
+    -you look pretty today
+    -beautiful
+    -gorgeous
+    -aww
+    -handsome
+    -sexy
+    -attractive
+    -amazing
+
+- intent: flirt 2
+  examples:
+    -you look really good, you know?
+    -how do you even pull something like that?
+    -i miss you
+    -i want to be with you
+    -i wish we could run away together
+    -i really want you
+    -i wish you were here
+    
+- intent: goofy 1 
+  examples:
+    -you are funny
+    
+- intent: goofy 2
+  examples:
+    -it's so hot today
+    
+- intent: goofy 3 
+  examples:
+    -sing me a song
+    -sing me to sleep
+    
+- intent: goofy 4 
+  examples:
+    -how's my dress
+    -how do I look
+    -am I pretty?
+
+    
+- intent: goofy 5
+  examples:  
+     -i am head over heels for you
+  
+
+- intent: sarcasm 1
+  examples:
+    -really?
+    -i am sad
+    -a bit down
+    -kinda feeling low
+    -I failed
+    
+- intent: sarcasam 2
+  examples:
+    -ha ha
+    -are you kidding me
+    -i need advice
+    -can you help me?
+    
+- intent: sarcasam 3
+  examples:
+    -I need to tell you something
+    -did you know?
+    -knock knock
+    
+    
+- intent: emotional 1
+  examples: 
+    -im feeling a bit low today
+    -my parents got divorced today
+    -i got less marks in a test
+    -i cried today
+    -today was a long day
+    -school was horrible today
+    -i got bullied today
+
+- intent: emotional 2   
+  examples: 
+    -im so happy today
+    -i am so happy today
+    -its such a nice day
+    -that made me cry, you know?
+    -it was such a nice gesture
+    -it was so sweet
+    -they were really nice
+    -he sent me flowers
+    -she sent me flowers
+    -it was too cute

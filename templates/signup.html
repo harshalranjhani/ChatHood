@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp | ChatHood</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='/images/favicon.png')}}" type="image/x-icon">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/signup.css') }}">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Sign Up</h1>
+      {% if message %}
+      <h6 style="text-align: center;">{{message}}</h6>
+      {% endif %}
+      <form action="/signup" method="post">
+        <div class="txt_field">
+          <input type="text" id="username" name="username" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+            <input type="email" id="email" name="email" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" id="password" name="password" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+        <div class="signup_link">
+          Already a member? <a href="/login">LogIn</a>
+        </div>
+        <input type="submit" value="Sign Up" class="submit_btn">
+      </form>
+    </div>
+
+  </body>
+</html>

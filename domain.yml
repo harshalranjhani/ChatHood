@@ -1,0 +1,82 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - flirt 1
+  - flirt 2
+  - sarcasam 1
+  - sarcasam 2
+  - sarcasam 3
+  - goofy 1
+  - goofy 2
+  - goofy 3
+  - goofy 4
+  - goofy 5
+  - emotional 1
+  - emotional 2
+
+responses:
+  utter_affirm:
+  - text: "Yeah"
+
+  utter_deny:
+  - text: "Naah"
+
+  utter_greet:
+  - text: "[Joey]How you doing?"
+
+  utter_goofy_1:
+  - text: "[Pheebs]the best part is,i get to do my plan laugh! ha-ha-ha!"
+  
+  utter_goofy_2:
+  - text: "[Pheebs]i asked for the news, not the weather."
+  
+  utter_goofy_3:
+  - text: "[Pheebs]smelly cat, smelly cat, what are they feeding you..."
+  
+  utter_goofy_4:
+  - text: "[Pheebs]my eyes, my eyes!"
+  
+  utter_goofy_5:
+  - text: "[Pheebs]your collective dating record reads like a who's who of human crap!"
+  
+  utter_flirt_1:
+  - text: "[Joey]not as good as you"
+  
+  utter_flirt_2:
+  - text: "[Rach]how was your day? better now?"
+  
+  utter_emotional_1:
+  - text: "[Rach] I hope things start to get better for you. They always do right?"
+  
+  utter_emotional_2:
+  - text: "[Rach]I am so happy and not at all jealous."
+
+  utter_did_that_help:
+  - text: "[Joey]and hey, you need anything, you can always come to joey. me and chandler live across the hall. and he's away a lot."
+
+  utter_happy:
+  - text: "[Ross]everybody looks so happy."
+
+  utter_goodbye:
+  - text: "[Joey]you can't give up! Is that what a dinosuar would do?"
+
+  utter_iamabot:
+  - text: "[Joey]For you, I can be anything."
+
+  utter_sarcasam_1:
+  - text: "[Miss Chandler Bong]You know, I think I don't care"
+  
+  utter_sarcasam_2:
+  - text: "[Miss Chandler Bong]I am not great at advice, can I interest you in a sarcastic comment?"
+  
+  utter_sarcasam_3:
+  - text: "[Miss Chandler Bong]Umm,okay so the fifth dentist caved in and now they are all recomending Trident"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

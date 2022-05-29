@@ -1,0 +1,114 @@
+version: "3.1"
+
+stories:
+  - story: affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: affirm
+      - action: utter_flirt_1
+
+  - story: flirt_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: flirt 1
+      - action: utter_flirt_1
+
+  - story: flirt_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: flirt 1
+      - action: utter_flirt_1
+
+  - story: flirt_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: flirt 2
+      - action: utter_flirt_2
+
+  - story: sarcasam_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: sarcasam 1
+      - action: utter_sarcasam_1
+
+  - story: sarcasam_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: sarcasam 2
+      - action: utter_sarcasam_2
+
+  - story: sarcasam_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: sarcasam 3
+      - action: utter_sarcasam_3
+
+  - story: goofy_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goofy 1
+      - action: utter_goofy_1
+
+  - story: goofy_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goofy 2
+      - action: utter_goofy_2
+
+  - story: goofy_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goofy 3
+      - action: utter_goofy_3
+
+  - story: goofy_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goofy 4
+      - action: utter_goofy_4
+
+  - story: goofy_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goofy 5
+      - action: utter_goofy_5
+
+  - story: emotional_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: emotional 1
+      - action: utter_emotional_1
+
+  - story: emotional_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: emotional 2
+      - action: utter_emotional_2
+
+  - story: affirm
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: affirm 
+      - action: utter_affirm
+
+  - story: deny
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: deny
+      - action: utter_deny
