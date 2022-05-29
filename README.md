@@ -8,6 +8,7 @@ It is a social web app that can be further extended as a mobile application, whi
 This app can be used for the people who sometimes need to get out of the real world and dive in into their own little imagination. This app can also be used to help people talk to the personalities that they look up to. 
 Other than this it will also be a really fun and entertaining app for the audience of every age group and what better than taking advice from Gandhi himself.
 
-we used RASA in python to use ML through it,
+We used RASA in python to use ML through it,
 defined intents and utters on our own so no material has been copid off the net,
 the main purpose of this code is to talk to celebs or other famous personalities you would not be able to do in normal life.
+
